@@ -1,2 +1,2 @@
-AppNexus Client
-==================
+Varager ruby wrapper
+=======================
