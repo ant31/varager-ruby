@@ -50,7 +50,7 @@ env.delete!
 ## Add variables to an environment
 ```ruby
 # 1. From http_client
-env = Varager.add_vars(params: {id: env_id}, body: {config: {var1: value, var2: value2}})
+env = Varager.add_vars(params: {id: env_id}, body: {config: {var1: value, var2: value2}}.to_json)
 #=> #<Varager::Model::Env>>
 
 # 2. From model
