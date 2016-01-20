@@ -1,5 +1,9 @@
 Varager ruby wrapper
 =======================
+# Installation
+```bash
+gem install varager
+```
 
 # Configuration
 ```ruby
