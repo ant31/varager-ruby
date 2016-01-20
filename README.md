@@ -16,7 +16,8 @@ OpenAPI.logger = Varager.logger
 ```
 
 # Usage
-Auth is done automaticaly once only on the first call
+Auth is done once on the first call
+
 ## Environments
 ### List
 ```ruby
@@ -42,7 +43,7 @@ env = Varager.get_env(params: {id: env_id})
 env.delete!
 ```
 
-## Add Variable to an Environmet 
+## Add variables to an environment
 ```ruby
 # 1. From http_client
 env = Varager.add_vars(params: {id: env_id}, body: {config: {var1: value, var2: value2}})
