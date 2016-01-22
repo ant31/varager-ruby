@@ -2,6 +2,7 @@ $:.unshift(File.dirname(__FILE__))
 
 module Varager
   module Handlers
-    autoload :AppResponse, "handlers/app_response"
+    autoload :Model, "handlers/json"
+    autoload :Array, "handlers/json"
   end
 end

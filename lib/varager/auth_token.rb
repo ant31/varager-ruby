@@ -2,8 +2,9 @@ module Varager
   class AuthToken < OpenAPI::AuthToken
 
     def initialize
-      super ({"header" => "Authorization",
-            "header_format" => "%s"})
+      super ({"expires_in" => 3600,
+              "header" => "Authorization",
+              "header_format" => "%s"})
     end
 
     def new_auth_token()
