@@ -31,11 +31,11 @@ module Varager
       end
 
       def add_var(key, value)
-        Varager.add_vars(params: {id: self.name}, body: {vars: {key => value}}.to_json)
+        Varager.add_vars(params: {id: self.name.gsub("/", "+")}, body: {vars: {key => value}}.to_json)
       end
 
       def add_vars(dict)
-        Varager.add_vars(params: {id: self.name}, body: {vars: dict}.to_json)
+        Varager.add_vars(params: {id: self.name.gsub("/", "+")}, body: {vars: dict}.to_json)
       end
 
       # def self.json_root
