@@ -19,7 +19,7 @@ module Varager
 
           # CRUD CALLS
           match "GET", "varager/handlers/model#response", :GET, via: :get
-          match "DELETE", "varager/handlers/model#response", :DELETE, via: :get
+          match "DELETE", "varager/handlers/model#response", :DELETE, via: :delete
           match "PUT", "varager/handlers/model#response", :PUT, via: :get
           match "POST", "varager/handlers/model#response", :POST, via: :post
         end
